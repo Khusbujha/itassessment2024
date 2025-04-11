@@ -1,0 +1,145 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: wheat;
+    font-size: 25px;
+    color: #333;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+header nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 2px solid #f0a500;
+}
+
+nav ul li {
+    margin: 0 60px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+header p {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+body {
+    padding-top: 20px;
+    background-color: rgb(251, 234, 203);
+}
+
+body,
+home .welcome {
+    padding-top: 120px;
+}
+
+body,
+home .welcome h1 {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+
+
+about .about h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+services .services h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    margin-bottom: 0;
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+}
