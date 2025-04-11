@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookiepedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="bg.avif" style="background-size: cover; background-repeat: no-repeat;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <img src="logo.avif" alt="Logo" width="100px" height="90px" align="left" position="fixed"
+            style="margin-left: 20px; margin-top: 2px;">
+        <h1 style="text-align: right; margin-right: 20px; margin-top: 18px;">Bookiepedia</h1>
+        <p>Your one-stop destination for book lovers!</p>
+    </header>
+
+    <section id="home" class="welcome">
+        <h1 style="background-color: wheat;">Welcome to Bookiepedia!</h1>
+        <div class="slider">
+            <div class="slides">
+
+                <div class="slide">
+                    <img src="books1home.avif" alt="Image 1">
+                </div>
+
+                <div class="slide">
+                    <img src="books2home.avif" alt="Image 2">
+                </div>
+
+                <div class="slide">
+                    <img src="books3home.avif" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Bookiepedia</p>
+        <p>Address: Kathmandu, Nepal</p>
+        <p>&copy; 2025 Bookiepedia. All rights reserved.</p>
+        <a href="index.html" style="color: #f0a500;">Home</a>&nbsp;
+        <a href="about.html" style="color: #f0a500;">About us</a>&nbsp;
+        <a href="services.html" style="color:#f0a500;">Services</a>&nbsp;
+        <a href="contact.html" style="color:#f0a500">Contact us</a>&nbsp;
+        <a href=" gallery.html" style="color:#f0a500">Gallery</a>&nbsp;
+    </footer>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % slide.length;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 3500);
+    </script>
+</body>
+
+</html>
